@@ -11,6 +11,7 @@ export function useMainApp(usersUsecase: UsersUseCase = UsersInteractors()) {
     const fetchGithubUsers = async (search: string) => {
         try {
             setIsLoading(true)
+            setUsers([])
             const githubUsers = await usersUsecase.getUsers(search);
 
             const mappedUsers: User[] = await Promise.all(
