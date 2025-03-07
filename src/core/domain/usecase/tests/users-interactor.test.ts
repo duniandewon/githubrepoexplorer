@@ -9,8 +9,15 @@ const mockUsers = [
     { id: 2, avatar_url: "avatar2.jpg", login: "Bob" },
 ];
 
+const mockRepos = [
+    {
+        id: 1, name: "some repo", stargazers_count: 0, description: "some description",
+    }
+]
+
 const mockRepo: UsersRepository = {
     getUsers: vi.fn().mockResolvedValue({ items: mockUsers }),
+    getGitRepo: vi.fn().mockResolvedValue(mockRepos)
 };
 
 describe("UsersInteractors", () => {

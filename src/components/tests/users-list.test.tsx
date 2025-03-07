@@ -8,17 +8,17 @@ import userEvent from "@testing-library/user-event";
 
 const mockUsers: User[] = [
     {
-        id: "1",
+        id: 1,
         username: "user1",
         repositories: [
-            { id: "repo1", title: "Repo One", description: "Repo one description", star: 2 },
-            { id: "repo2", title: "Repo Two", description: "Repo two description", star: 2 },
+            { id: 9, title: "Repo One", description: "Repo one description", star: 2 },
+            { id: 2, title: "Repo Two", description: "Repo two description", star: 2 },
         ],
     },
     {
-        id: "2",
+        id: 2,
         username: "user2",
-        repositories: [{ id: "repo3", title: "Repo Three", description: "Repo three description", star: 54 }],
+        repositories: [{ id: 9, title: "Repo Three", description: "Repo three description", star: 54 }],
     },
 ];
 

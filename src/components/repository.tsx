@@ -1,6 +1,6 @@
 import { Star } from "lucide-react";
 
-import { Repository } from "@/types";
+import { type Repository } from "@/types";
 
 export function Repository({ repo }: { repo: Repository }) {
     return (

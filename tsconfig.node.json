@@ -4,11 +4,11 @@
     "composite": true,
     "target": "ES2022",
     "lib": ["ES2022"],
-    "module": "ES2022",
+    "module": "Node16",
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "node",
+    "moduleResolution": "node16",
     "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
     "moduleDetection": "force",
