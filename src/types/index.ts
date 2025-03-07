@@ -1,12 +1,12 @@
 export interface Repository {
-    id: string
+    id: number
     title: string
     description: string
     star: number
 }
 
 export interface User {
-    id: string
+    id: number
     username: string
     repositories: Repository[]
 }
